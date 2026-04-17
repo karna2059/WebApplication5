@@ -22,7 +22,7 @@
                         <asp:Label ID="lblfirst" runat="server" Text="First Name"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtfirst" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtfirst" runat="server" ></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvfirst" runat="server" ErrorMessage="please enter  Name" ControlToValidate="txtfirst" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
@@ -33,6 +33,16 @@
                     <td>
                         <asp:TextBox ID="txtlast" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvlast" runat="server" ErrorMessage="please enter  Name" ControlToValidate="txtlast" forecolor="red"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lblage" runat="server" Text="Age"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtage" runat="server" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvage" runat="server" ErrorMessage="please enter age" ControlToValidate="txtage" ForeColor="Red" ></asp:RequiredFieldValidator>
+                        <asp:RangeValidator ID="rngage" runat="server" ErrorMessage="please enter within range" ControlToValidate="txtage" ForeColor="Red" MinimumValue="1" MaximumValue="80"></asp:RangeValidator>
                     </td>
                 </tr>
                 <tr>
@@ -80,7 +90,12 @@
                 <tr>
                     <td></td>
                     <td>
-                        <asp:Button ID="btnsubmit" runat="server" Text="Submit" />
+                        <asp:Button ID="btnsubmit" runat="server" Text="Submit" OnClick="btnsubmit_Click" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lbldisplay" runat="server" text=""></asp:Label>
                     </td>
                 </tr>
             </table>

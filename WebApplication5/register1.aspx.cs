@@ -13,5 +13,11 @@ namespace WebApplication5
         {
 
         }
+
+        protected void btnsubmit_Click(object sender, EventArgs e)
+        {
+            lbldisplay.Text = "your Name is : " + txtfirst.Text +" "+   txtlast.Text + "</br>" + "your age is :" + txtage.Text +"</br>"+ "your email is :" + txtemail.Text+"</br>"+"your mobile number is :"+txtmobileno.Text;
+
+        }
     }
 }
