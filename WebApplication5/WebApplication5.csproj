@@ -74,6 +74,7 @@
     <Content Include="login details.aspx" />
     <Content Include="questions,cs.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="register1.aspx" />
     <Content Include="reigster form.html" />
     <Content Include="username.aspx" />
     <Content Include="Web.config" />
@@ -144,6 +145,13 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register1.aspx.cs">
+      <DependentUpon>register1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register1.aspx.designer.cs">
+      <DependentUpon>register1.aspx</DependentUpon>
     </Compile>
     <Compile Include="username.aspx.cs">
       <DependentUpon>username.aspx</DependentUpon>
