@@ -43,6 +43,8 @@
                         <asp:TextBox ID="txtemail" runat="server"></asp:TextBox>
                          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="please enter  Email" ControlToValidate="txtemail" forecolor="red"></asp:RequiredFieldValidator>
 
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtemail" ErrorMessage="please enter vaild email" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+
                     </td>
                 </tr>
                 <tr>
@@ -62,7 +64,7 @@
                     <td>
                         <asp:TextBox ID="txtconformpass" runat="server"></asp:TextBox>
                       <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="please enter same Password" ControlToValidate="txtconformpass" forecolor="red"></asp:RequiredFieldValidator>
-
+                    <asp:CompareValidator ID="cdrconform" runat="server" ControlToValidate="txtconformpass" ControlToCompare="txtpass" ErrorMessage="please enter same password" ForeColor="Red"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
