@@ -42,7 +42,8 @@
                     <td>
                         <asp:TextBox ID="txtage" runat="server" ></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvage" runat="server" ErrorMessage="please enter age" ControlToValidate="txtage" ForeColor="Red" ></asp:RequiredFieldValidator>
-                        <asp:RangeValidator ID="rngage" runat="server" ErrorMessage="please enter within range" ControlToValidate="txtage" ForeColor="Red" MinimumValue="1" MaximumValue="80"></asp:RangeValidator>
+                        <asp:CustomValidator ID="cvAge" runat="server" ErrorMessage="please age between 18 to 60" ForeColor="Red" OnServerValidate="cvAge_ServerValidate"></asp:CustomValidator>
+<%--                        <asp:RangeValidator ID="rngage" runat="server" ErrorMessage="please enter within range" ControlToValidate="txtage" ForeColor="Red" MinimumValue="18" MaximumValue="30"></asp:RangeValidator>--%>
                     </td>
                 </tr>
                 <tr>

@@ -19,5 +19,18 @@ namespace WebApplication5
             lbldisplay.Text = "your Name is : " + txtfirst.Text +" "+   txtlast.Text + "</br>" + "your age is :" + txtage.Text +"</br>"+ "your email is :" + txtemail.Text+"</br>"+"your mobile number is :"+txtmobileno.Text;
 
         }
+
+        protected void cvAge_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            int age;
+            if (int.TryParse(txtage.Text, out age))
+            {
+                args.IsValid = (age >= 18 && age <= 60);
+            }
+            else
+            {
+                args.IsValid = false;
+            }
+        }
     }
 }
