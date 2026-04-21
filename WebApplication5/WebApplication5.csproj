@@ -71,6 +71,7 @@
     <Content Include="date,time.aspx" />
     <Content Include="employee details.aspx" />
     <Content Include="hobbies.aspx" />
+    <Content Include="languages.aspx" />
     <Content Include="login details.aspx" />
     <Content Include="questions,cs.aspx" />
     <Content Include="register.aspx" />
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="hobbies.aspx.designer.cs">
       <DependentUpon>hobbies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="languages.aspx.cs">
+      <DependentUpon>languages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="languages.aspx.designer.cs">
+      <DependentUpon>languages.aspx</DependentUpon>
     </Compile>
     <Compile Include="login details.aspx.cs">
       <DependentUpon>login details.aspx</DependentUpon>

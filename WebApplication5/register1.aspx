@@ -75,7 +75,9 @@
                     <td>
                         <asp:TextBox ID="txtconformpass" runat="server"></asp:TextBox>
                       <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="please enter same Password" ControlToValidate="txtconformpass" forecolor="red"></asp:RequiredFieldValidator>
-                    <asp:CompareValidator ID="cdrconform" runat="server" ControlToValidate="txtconformpass" ControlToCompare="txtpass" ErrorMessage="please enter same password" ForeColor="Red"></asp:CompareValidator>
+                        <asp:CompareValidator ID="cvconfrompass" runat="server" ErrorMessage="please enter same password" ControlToValidate="txtconformpass" ControlToCompare="txtpass" ForeColor="Red"></asp:CompareValidator>
+
+
                     </td>
                 </tr>
                 <tr>
@@ -85,7 +87,7 @@
                     <td>
                         <asp:TextBox ID="txtmobileno" runat="server" ></asp:TextBox>
                          <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="please enter Mobile Number" ControlToValidate="txtmobileno" forecolor="red"></asp:RequiredFieldValidator>
-
+                        <asp:RegularExpressionValidator ID="revmobileno" runat="server" ControlToValidate="txtmobileno" ErrorMessage="please enter valid mobile number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
