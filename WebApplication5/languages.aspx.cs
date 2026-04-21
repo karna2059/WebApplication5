@@ -56,7 +56,7 @@ namespace WebApplication5
         {
             if (rbtteleugu.Checked)
             {
-                rbtteleugu.Text += "your selected language :";
+                lbltelugu.Text = "your selected language telugu ";
             }
         }
 
@@ -64,7 +64,7 @@ namespace WebApplication5
         {
               if (rbthindhi.Checked)
             {
-                rbthindhi.Text += "your selected language :";
+                lblhindhi.Text = "your selected language hindhi";
             }
         }
 
@@ -72,7 +72,7 @@ namespace WebApplication5
         {
              if (rbtenglish.Checked)
             {
-                rbtenglish.Text += "your selected language : ";
+                lblenglish.Text = "your selected language english ";
             }
         }
 
@@ -80,7 +80,7 @@ namespace WebApplication5
         {
             if (chkchess.Checked)
             {
-                chkchess.Text += " your selected :";
+                lblchess.Text += " your selected  chess";
             }
         }
 
@@ -88,7 +88,7 @@ namespace WebApplication5
         {
             if (chkcricket.Checked)
             {
-                chkcricket.Text += "your selected :";
+                lblcricket.Text = "your selected cricket";
             }
         }
 
@@ -96,7 +96,7 @@ namespace WebApplication5
         {
             if (chktennis.Checked)
             {
-                chktennis.Text += " your selected :";
+                lbltennis.Text = " your selected  tennis";
             }
         }
     }
