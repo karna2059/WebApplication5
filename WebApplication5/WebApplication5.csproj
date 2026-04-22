@@ -71,6 +71,7 @@
     <Content Include="cookiedata.aspx" />
     <Content Include="cookies.aspx" />
     <Content Include="date,time.aspx" />
+    <Content Include="default2.aspx" />
     <Content Include="employee details.aspx" />
     <Content Include="hobbies.aspx" />
     <Content Include="languages.aspx" />
@@ -80,6 +81,7 @@
     <Content Include="register.aspx" />
     <Content Include="register1.aspx" />
     <Content Include="reigster form.html" />
+    <Content Include="session.aspx" />
     <Content Include="username.aspx" />
     <Content Include="viewstate.aspx" />
     <Content Include="Web.config" />
@@ -115,6 +117,13 @@
     </Compile>
     <Compile Include="date,time.aspx.designer.cs">
       <DependentUpon>date,time.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default2.aspx.cs">
+      <DependentUpon>default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default2.aspx.designer.cs">
+      <DependentUpon>default2.aspx</DependentUpon>
     </Compile>
     <Compile Include="employee details.aspx.cs">
       <DependentUpon>employee details.aspx</DependentUpon>
@@ -186,6 +195,13 @@
     </Compile>
     <Compile Include="register1.aspx.designer.cs">
       <DependentUpon>register1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="session.aspx.cs">
+      <DependentUpon>session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="session.aspx.designer.cs">
+      <DependentUpon>session.aspx</DependentUpon>
     </Compile>
     <Compile Include="username.aspx.cs">
       <DependentUpon>username.aspx</DependentUpon>
