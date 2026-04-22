@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bookmyshowaspx.aspx" />
+    <Content Include="cookiedata.aspx" />
+    <Content Include="cookies.aspx" />
     <Content Include="date,time.aspx" />
     <Content Include="employee details.aspx" />
     <Content Include="hobbies.aspx" />
@@ -92,6 +94,20 @@
     </Compile>
     <Compile Include="bookmyshowaspx.aspx.designer.cs">
       <DependentUpon>bookmyshowaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cookiedata.aspx.cs">
+      <DependentUpon>cookiedata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cookiedata.aspx.designer.cs">
+      <DependentUpon>cookiedata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cookies.aspx.cs">
+      <DependentUpon>cookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cookies.aspx.designer.cs">
+      <DependentUpon>cookies.aspx</DependentUpon>
     </Compile>
     <Compile Include="date,time.aspx.cs">
       <DependentUpon>date,time.aspx</DependentUpon>
