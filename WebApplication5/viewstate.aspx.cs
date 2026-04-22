@@ -19,6 +19,14 @@ namespace WebApplication5
 
         protected void btnsubmmit_Click(object sender, EventArgs e)
         {
+
+            //int count=0;
+            //count++;
+            //label1.text="count clicks"+count;
+
+
+
+
             int count = (int)ViewState["clickcount"];
             count++;
             ViewState["clickcount"] = count;

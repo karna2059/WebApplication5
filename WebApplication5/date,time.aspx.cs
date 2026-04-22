@@ -43,5 +43,17 @@ namespace WebApplication5
                 ddlstate.Items.Add("canada");
             }
         }
+
+        protected void ddlstate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ddlloction.Items.Clear();
+            if (ddlstate.SelectedValue == "ap")
+            {
+                ddlloction.Items.Add("--select location--");
+                ddlloction.Items.Add("anathapuram");
+                ddlloction.Items.Add("kadapa");
+                ddlloction.Items.Add("triupathi");
+            }
+        }
     }
 }
