@@ -73,9 +73,11 @@
     <Content Include="date,time.aspx" />
     <Content Include="default2.aspx" />
     <Content Include="employee details.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="hobbies.aspx" />
     <Content Include="languages.aspx" />
     <Content Include="login details.aspx" />
+    <Content Include="numberofusers.aspx" />
     <Content Include="querystring.aspx" />
     <Content Include="questions,cs.aspx" />
     <Content Include="register.aspx" />
@@ -133,6 +135,9 @@
     <Compile Include="employee details.aspx.designer.cs">
       <DependentUpon>employee details.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="hobbies.aspx.cs">
       <DependentUpon>hobbies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,6 +158,13 @@
     </Compile>
     <Compile Include="login details.aspx.designer.cs">
       <DependentUpon>login details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="numberofusers.aspx.cs">
+      <DependentUpon>numberofusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="numberofusers.aspx.designer.cs">
+      <DependentUpon>numberofusers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="querystring.aspx.cs">
